@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    
+    
+    var answer = parseInt(Math. random() * 100);
+    var playerNumber = 1;
+     
+    while(true){ // false - лож
+        
+         var userAnswer = prompt("Угадай число от 0 до 100. \nХодит игрок " + playerNumber + ".\nХочеш выйти нажми q"); 
+        
+        if(userAnswer =='q')
+        break;
+        
+        userAnswer = parseInt(userAnswer);
+        
+        if(userAnswer == answer){
+           alert("Подравляю вы гений Gamer "  + playerNumber);
+        break;
+        
+        } else if(userAnswer > answer){
+              alert("Веденное число слишком большое");
+        } else if (userAnswer < answer){
+            alert("Веденное число мало. ");
+        }
+        
+        if(playerNumber == 1)
+            playerNumber = 2;        
+        else
+            playerNumber = 1;           
+        }
+    
+         alert("Правильный ответ "+ answer);
+         
+</script>
